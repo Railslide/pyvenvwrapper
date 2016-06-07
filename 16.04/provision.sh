@@ -15,7 +15,7 @@ sudo dpkg-reconfigure locales
 sudo apt-get update
 sudo apt-get install -y python3-pip
 sudo pip3 install virtualenvwrapper
-sudo apt-get install -y pyvenv-3
+sudo apt-get install -y python3-venv
 
 echo "export WORKON_HOME='${VAGRANT_HOME}/.virtualenvs'" >> $VAGRANT_HOME/.profile
 echo "export PROJECT_HOME='${VAGRANT_HOME}/'" >> $VAGRANT_HOME/.profile
