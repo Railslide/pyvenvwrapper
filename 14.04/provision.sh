@@ -17,5 +17,6 @@ sudo apt-get install -y $PYVENV_VERSION
 
 echo "export WORKON_HOME='${VAGRANT_HOME}/.virtualenvs'" >> $VAGRANT_HOME/.profile
 echo "export PROJECT_HOME='${VAGRANT_HOME}/'" >> $VAGRANT_HOME/.profile
-echo "VIRTUALENVWRAPPER_VIRTUALENV='${PYVENV_VERSION}'" >> $VAGRANT_HOME/.profile
+echo "export VIRTUALENVWRAPPER_PYTHON='/usr/bin/python3'" >> $VAGRANT_HOME/.profile
+echo "export VIRTUALENVWRAPPER_VIRTUALENV='${PYVENV_VERSION}'" >> $VAGRANT_HOME/.profile
 echo "source /usr/local/bin/virtualenvwrapper.sh" >> $VAGRANT_HOME/.profile
